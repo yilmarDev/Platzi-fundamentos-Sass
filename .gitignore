@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,node,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,visualstudiocode, sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,node,visualstudiocode, sass
 
 ### Linux ###
 *~
@@ -234,4 +234,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,visualstudiocode
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,visualstudiocode, sass
