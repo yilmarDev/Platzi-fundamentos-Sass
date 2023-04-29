@@ -239,5 +239,6 @@ $RECYCLE.BIN/
 *.css.map
 *.sass.map
 *.scss.map
+css/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,node,visualstudiocode, sass

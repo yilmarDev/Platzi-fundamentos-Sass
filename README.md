@@ -60,3 +60,22 @@ Las variables locales y globales pueden tener el mismo nombre siempre y cuando t
 ### !global flag
 Permite cambiar el scope de una variable local a global.
 
+# At-rules CSS
+Es una declaración que cumple con diferentes funciones, se inicializa con el símbolo @ y cuenta con una sintaxis propia.
+Las at-rules dentro de Sass ayudan a mantener la compatibilidad con próximas versiones de CSS.
+
+## Ejemplos
+- @use
+- @import
+- @function
+- @forward
+- @extend
+- @at-rule
+
+## At-rules para compilación
+- @error, @warm, @debug 
+- @include
+- @for, @if, @each, @while
+
+# Nesting o anidación de selectores
+Permite tener selectores dentro de otros, para simplificar el código. Para esto se deben escribir los selectores en el orden que aparecen en el código HTML.
