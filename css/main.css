@@ -7,24 +7,128 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #ffefe7;
+  font-size: 1.6rem;
 }
 
 nav {
   width: auto;
   padding: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  color: #7c6a0a;
 }
 nav p {
-  font-size: 1.6rem;
-  margin-left: 32px;
+  font-size: 3.6rem;
 }
 nav .icons {
   display: flex;
+  gap: 16px;
 }
 nav .icons button {
   background: none;
   border-style: none;
+}
+@media (max-width: 360px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    gap: 0;
+    padding-left: 0px;
+  }
+  nav p {
+    padding-left: 44px;
+  }
+}
+
+article {
+  color: #7c6a0a;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px 20px 60px 20px;
+}
+article h1 {
+  font-size: 3.2rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+article p {
+  font-size: 1.6rem;
+}
+article button {
+  background-color: #fa9500;
+  padding: 20px;
+  border-radius: 32px;
+  border-style: none;
+}
+article .image-section img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+article .impact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  article {
+    flex-direction: row-reverse;
+  }
+  article .image-section {
+    max-width: 50%;
+  }
+  article .image-section img {
+    width: 25vw;
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7c6a0a;
+  font-size: 20px;
+}
+section .healthcare h2 {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+section .healthcare .card-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+section .healthcare .card-section .product-card {
+  width: 15vw;
+  height: auto;
+  background-color: #ffdac6;
+  color: #7c6a0a;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .healthcare .card-section .product-card .product-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  section .healthcare .product-card {
+    width: 20vw;
+  }
 }
 
 footer {

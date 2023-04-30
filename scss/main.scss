@@ -1,8 +1,10 @@
 $primary-color: #ffefe7;
 $secondary-color: #ffdac6;
 $tertiary-color: #babd8d;
+$quaternary-color: #fa9500;
 $primary-text-color: #7c6a0a;
 $font-stack: "IBM Plex Sans", sans-serif;
+$paragraph-size: 1.6rem;
 
 html {
   font-size: 62.5%;
@@ -13,31 +15,150 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: $primary-color;
+  font-size: 1.6rem;
 }
 
 nav {
   width: auto;
   padding: 16px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  color: $primary-text-color;
 
   p {
-    font-size: 1.6rem;
-    margin-left: 32px;
+    font-size: 3.6rem;
   }
 
   .icons {
     display: flex;
+    gap: 16px;
     button {
       background: none;
       border-style: none;
     }
   }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    gap: 0;
+    padding-left: 0px;
+
+    p {
+      padding-left: 44px;
+    }
+  }
+}
+
+article {
+  color: $primary-text-color;
+  width: auto;
+  // padding: 0px 44px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0px 20px 60px 20px;
+
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    font-size: $paragraph-size;
+  }
+
+  button {
+    background-color: $quaternary-color;
+    padding: 20px;
+    border-radius: 32px;
+    border-style: none;
+  }
+
+  .image-section {
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .impact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+
+    .image-section {
+      max-width: 50%;
+      img {
+        width: 25vw;
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+  // background-color: pink;
+  padding: 60px;
+
+  h2 {
+    color: $primary-text-color;
+    font-size: 20px;
+  }
+
+  .healthcare {
+    h2 {
+      font-weight: 300;
+      padding-bottom: 20px;
+    }
+
+    .card-section {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+
+      .product-card {
+        width: 15vw;
+        height: auto;
+        background-color: $secondary-color;
+        color: $primary-text-color;
+        padding: 20px;
+        border-radius: 8px;
+
+        .product-image {
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .product-card {
+        width: 20vw;
+      }
+    }
+  }
 }
 
 footer {
-  $background: #fa9500;
-  background-color: $background;
+  background-color: $quaternary-color;
   width: 100%;
   height: 250px;
 }

@@ -79,3 +79,17 @@ Las at-rules dentro de Sass ayudan a mantener la compatibilidad con próximas ve
 
 # Nesting o anidación de selectores
 Permite tener selectores dentro de otros, para simplificar el código. Para esto se deben escribir los selectores en el orden que aparecen en el código HTML.
+
+# Las expresiones
+Todo aquello que va del lado derecho de una variable, admitiendo varios tipos de valores. Las expresiones son mucho más poderosas que los valores CSS simples, ya que se pasan como argumentos a mixins y funciones.
+- Números
+- Strings 
+- Booleanos
+- Colores
+- Null
+- Listas
+- Mapas
+
+# Herencia
+Un mecanismo mediante el cual un selector puede recibir estilos que vienen de variables utilizadas previamente.
+Para implementarla se puede usar la directiva @extend
